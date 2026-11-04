@@ -9,6 +9,7 @@
 // Website:      https://icpriceaction.com
 // Repository:   https://github.com/icPriceAction/tick-counter-side
 // YouTube:      https://youtube.com/@icPriceAction
+// Support:      https://buymeacoffee.com/icpriceaction
 //
 // Credits:      Based on the TickCounter indicator included with NinjaTrader 8.
 //               Portions Copyright (C) NinjaTrader, LLC <www.ninjatrader.com>.
@@ -27,18 +28,17 @@
 //               price, with an optional user-defined bracket size label.
 //
 // Changelog:
-//   v1.4.0 (2026-11-03) - Added a configurable bracket size label: source (True Range / High-Low /
+//   v1.4.0 - Added a configurable bracket size label: source (True Range / High-Low /
 //                         Body), forming or last closed bar, ticks or points, 5 slots, overflow
 //                         label and label format. Off by default; no ATR indicator needed.
-//   v1.4.0 (2026-11-03) - Default Vertical Pixel Offset changed from -16 to +16 (counter above the
+//   v1.4.0 - Default Vertical Pixel Offset changed from -16 to +16 (counter above the
 //                         price line); corrected the setting's description of the offset direction.
-//   v1.4.0 (2026-11-03) - Updated the indicator description with support and prop firm links.
-//   v1.3.0 (2026-10-30) - Initial public release. Cleaned and optimized by icPriceAction.
-//   v1.3.0 (2026-10-30) - Removed the hard-coded ATR(1) bracket size label ([B1]/[B2]/[B3]/[NB]) and its parameter.
-//   v1.3.0 (2026-10-30) - Moved to the icPA folder/namespace and renamed class to icPATickCounterSide.
-//   v1.3.0 (2026-10-30) - Bar-type check cached once; price line and text redrawn only when they change.
-//   v1.3.0 (2026-10-30) - One-time Output window warnings for non-tick charts and On Bar Close mode.
-//   v1.3.0 (2026-10-30) - Added attribution to NinjaTrader's TickCounter and clarified license scope.
+//   v1.4.0 - Updated the indicator description with support and prop firm links.
+//   v1.2.0 - Initial public release. Cleaned and optimized by icPriceAction.
+//   v1.2.0 - Removed the hard-coded ATR(1) bracket size label ([B1]/[B2]/[B3]/[NB]) and its parameter.
+//   v1.2.0 - Moved to the icPA folder/namespace and renamed class to icPATickCounterSide.
+//   v1.1.0 - Bar-type check cached once; price line and text redrawn only when they change.
+//   v1.1.0 - One-time Output window warnings for non-tick charts and On Bar Close mode.
 // =========================================================================================
 
 #region Using declarations
@@ -108,7 +108,7 @@ namespace NinjaTrader.NinjaScript.Indicators.icPA
 				Description					= "Displays a live tick counter beside the current bar, anchored to an optional horizontal line at the last traded price, "
 											+ "with an optional bracket size label based on user-defined size slots. Requires a tick-based chart (Tick, or Heiken Ashi / Price on Volume / Volumetric built on Tick) and Calculate = On Each Tick.\r\n"
 											+ "Based on NinjaTrader's TickCounter indicator. Developed by Istvan Cebrian | https://icpriceaction.com\n"
-											+ "Support this free tool: https://buymeacoffee.com/icpriceaction | Prop Firm Discount Code: ICPAT (https://icpriceaction.com/prop-firms.html)";
+											+ "Support this free tool: https://buymeacoffee.com/icpriceaction";
 				Name						= "icPA - Tick Counter Side";
 				Calculate					= Calculate.OnEachTick;
 				BarsRequiredToPlot			= 0;

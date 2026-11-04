@@ -2,6 +2,7 @@
 
 [![NinjaTrader 8](https://img.shields.io/badge/Platform-NinjaTrader%208-black.svg)](https://ninjatrader.com)
 [![License: Personal Use](https://img.shields.io/badge/License-Personal%20Use-6E6E6E.svg)](#license)
+[![Support: Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/icpriceaction)
 [![YouTube Guide](https://img.shields.io/badge/YouTube-Watch%20Walkthrough-red.svg)](https://youtube.com/@icPriceAction)
 [![Website](https://img.shields.io/badge/Website-icpriceaction.com-111213.svg)](https://icpriceaction.com)
 
@@ -19,6 +20,24 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ---
 
+## ☕ Support the Project
+
+All tools by **icPriceAction** are **100% free and open-source for personal trading use**. There are no paywalls, subscriptions, or locked features and there never will be!
+
+Developing, optimizing for zero latency on multiple charts/instruments, and maintaining documentation and releases takes a **considerable amount of personal time and ongoing effort**. 
+
+If this tool saves you screen time, improves your execution, or cleans up your charts, buying a coffee is the best way to support continued development:
+
+<p align="left">
+  <a href="https://buymeacoffee.com/icpriceaction" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="190">
+  </a>
+</p>
+
+> **[☕ Support Development on Buy Me a Coffee](https://buymeacoffee.com/icpriceaction)**
+
+---
+
 ## 🆕 What's New in v1.4.0
 
 - **Configurable bracket size label:** optionally append a label such as `[B1]` to the counter, based on the bar's size. Choose how the bar is measured (True Range, High - Low or Body), which bar (forming or last closed), the units (ticks or points), up to 5 size slots with your own labels, an overflow label and the label format. Off by default.
@@ -32,8 +51,8 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 - **Counter Beside the Bar:** Displays ticks remaining (count down), ticks elapsed, or percent complete next to the current bar, moving with the last traded price.
 - **Configurable Bracket Size Label:** Classify the forming or last closed bar into up to 5 user-defined size brackets (in ticks or points) and show the matching label next to the counter. Works for any instrument or bracket system.
 - **Infinite Price Line:** Optional horizontal line at the last price, with configurable width, dash style and color.
-- **PATS & Context Aligned:** Designed for Price Action principles (Mack / Thomas Wade) and disciplined futures execution.
-- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency 2000-tick ES/MES charts.
+- **PATS & Context Aligned:** Designed for Price Action principles and disciplined futures execution.
+- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency tick charts.
 - **Clean Visuals:** Complementary default palette that preserves candlestick clarity without chart clutter.
 - **Fully Customizable:** Configure colors, thresholds, offsets, and alerts via the native NT8 settings panel.
 
@@ -43,14 +62,13 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 - **Bar type:** Tick-based charts only: **Tick**, or **Heiken Ashi**, **Price on Volume** or **Volumetric** built on Tick. On other bar types the indicator shows NinjaTrader's standard "tick-based bars only" message and prints one warning to the Output window.
 - **Calculate mode:** **On Each Tick** (the default). If set to On Bar Close, the counter will not update live and a one-time warning is printed to the Output window.
-- **Tick Replay:** Not required.
 
 ---
 
 ## 📥 Installation Guide
 
 1. Head to the **[Releases](https://github.com/icPriceAction/tick-counter-side/releases)** tab of this repository.
-2. Download the latest release `.zip` file (`icPriceAction_icPATickCounterSide_v1.4.0.zip`).
+2. Download the latest release `.zip` file.
    - *Note: Do NOT extract or unzip the file.*
 3. Open **NinjaTrader 8**.
 4. In the Control Center, navigate to:
@@ -114,16 +132,16 @@ These defaults are tuned for ES/MES. On other instruments, set the slots to your
 
 ## 📝 Changelog
 
-- **v1.4.0** (2026-11-03)
+- **v1.4.0**
   - Added a configurable bracket size label: source (True Range / High-Low / Body), forming or last closed bar, ticks or points, 5 slots, overflow label and label format. Off by default; no ATR indicator needed.
   - Default Vertical Pixel Offset changed from -16 to +16 (counter above the price line); corrected the setting's description of the offset direction.
   - Updated the indicator description with support and prop firm links.
-- **v1.3.0** (2026-10-30) - Initial public release. Cleaned and optimized by icPriceAction.
+- **previous versions** 
+  - Initial public release. Cleaned and optimized by icPriceAction.
   - Removed the hard-coded ATR(1) bracket size label and its parameter.
   - Moved to the icPA folder and renamed the class to `icPATickCounterSide`.
   - Bar-type check cached once; price line and text redrawn only when they change.
   - One-time Output window warnings for non-tick charts and On Bar Close mode.
-  - Added attribution to NinjaTrader's TickCounter and clarified license scope.
 
 ---
 
